@@ -1,1 +1,12 @@
-<!-- Create your form here -->
+<!-- Create your form here -->  
+<h1>Student Form</h1>
+    
+
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+ <%= label_tag 'student',  text_field_tag('first_name') %>
+  <%= label_tag 'student',  text_field_tag('last_name') %>
+  <%= submit_tag 'Submit Student' %> 
+                  
+<% end %> 
+
